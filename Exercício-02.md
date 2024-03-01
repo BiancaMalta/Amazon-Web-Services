@@ -23,8 +23,8 @@
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/c27ea9cb-17ae-43df-a957-a425e87f5435)
 3. Acessei a instância </br>
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/bb33a5cb-6801-4ad0-a555-598dbbcfa680)
-4. Entrei no serviço S3, criei um bucket e uppei uma imagem </br>
-  ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/44e6aa49-6046-42b6-8feb-1dc8fa442d5d)
+4. Entrei no serviço S3, criei um bucket </br>
+  ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/2ac982ab-2f3c-41b9-9258-4ff9e977e789)
 5. Para listar o bucket:
   - criei um usuário taxado com a police AdministratorAccess </br>
    ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/2fa1d95b-784d-42ff-8472-2719f05d8854) 
@@ -34,6 +34,12 @@
   ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/a47026ff-7822-4e0c-b473-3e2beee9717a)
 6. Adicionei a role criada na instância </br>
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/6ec85cfa-63d7-40e1-9210-18c4aad6955a)
-7. Criei os dois buckets S3
+7. Criei os dois buckets S3 via AWS CLI </br>
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/c9e6336a-5e42-4dfb-8aa7-2b6e40c01f83)
+8. Subi um arquivo para o bucket via AWS console </br>
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/fc1109ce-25dc-4629-9aab-b2d17e2d6356)
+9. Copie o arquivo do bucket 1 para o bucket 2 e liste os arquivos
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/cf4273e5-5b81-4277-b684-9a00882a0843)
+
 
 
