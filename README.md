@@ -70,4 +70,5 @@ A junção das duas na sua empresa.
   <summary>Praticando</summary>
  
 - Exercício 01: [IAM - Identidy Acess Management](https://github.com/BiancaMalta/Amazon-Web-Services/blob/main/Exerc%C3%ADcio-01.md)
+- Exercício 02: [Role/Bucket]https://github.com/BiancaMalta/Amazon-Web-Services/blob/main/Exerc%C3%ADcio-02.md
 </details>
