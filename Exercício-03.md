@@ -26,7 +26,7 @@ aws codecommit create-repository --repository-name RepoBianca
 ####  Instalei o git e clonei o meu repositório
 ```
 yum install git
-git clone clone <urlhttp disponibilizado na criação do repositório>
+git clone <urlhttp disponibilizado na criação do repositório>
 cd RepBianca
 ```
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/0ea8a1e0-e35a-4330-81b6-e963f1b74245)
