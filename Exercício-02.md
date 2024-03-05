@@ -16,10 +16,10 @@
 ### Para isso, executei os seguintes passos:
 ### 1. Criei uma role:
   - Especificando EC2 como caso de uso </br>
-<img src="https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/89c5b107-47b4-4a5c-8703-32fc4359cd4e" width="50%">
+<img src="https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/73e81f7e-2f65-4231-a883-41e0ded34194" width="50%">
   
   - Com a permissão de S3 full </br>
-<img src="https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/5688af9f-71fb-4f68-931f-5981257f04ef" width="50%"> 
+<img src="https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/22bb54a5-a834-454a-af60-ce1893ef4ad5" width="50%"> 
 </br>
 
 ### 2. Criei uma EC2 com as devidas especificações solicitadas e uma chave de acesso </br>
