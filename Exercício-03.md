@@ -1,19 +1,17 @@
 # Exercício 03
 ## Para essa atividade foi solicitado:
 - Criar um repositório utilizando aws cli
--  Habilitar um usuário para acesso ao CodeCommit
+- Habilitar um usuário para acesso ao CodeCommit
 - Clonar o repositório criado
 - Subir o print da última aula
 - Criar outro repositório e anexar os arquivos do módulo de versionamento de código
 ### Para isso, segui os seguintes passos:
-#### Criei uma role `EC2commit` com as seguintes permissões:
-![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/fafdcdd6-a634-47cb-9b5a-7e0bd72a399b)
-#### Criei uma instância e adicionei a role
+#### Criei uma role `EC2commit` com a permissão `AWSCodeCommitPowerUser`
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/c21c1605-653a-4622-962b-8a4b78641818)
+#### Não era necessário, mas resolvi criar uma instância para executar essa atividade. Dessa forma, o próximo passo envolveu adicionar a role criada a instância.
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/4d76d9d5-ffc4-4460-a882-fb7ad910daed)
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/eb5bc34f-e156-4ce1-b275-d7e5f72f1096)
-#### Separadamente, criei um usuário `herikamachado` para dar acessso ao CodeCommit
-![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/b45b3aed-2d8f-4a1d-a831-8c15836fbc6c)
-##### Lembre-se de habilitar a chave de acesso e a credencial AWS CodeCommit
+#### Criei um usuário `herikamachado` com a police `AWSCodeCommitPowerUser`.Logo após, habilitei a chave de acesso e as credenciais HTTPS do Git para o AWS CodeCommit.
 #### Na minha máquina, acessei a instância com a chave de acesso e criei o primeiro repositório
 ```
 aws configure
@@ -27,7 +25,7 @@ aws codecommit create-repository --repository-name RepoBianca
 ```
 yum install git
 git clone <urlhttp disponibilizado na criação do repositório>
-cd RepBianca
+cd RepoBianca
 ```
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/0ea8a1e0-e35a-4330-81b6-e963f1b74245)
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/1ed58149-2465-47d3-9cb9-4a6a079a5058)
@@ -46,5 +44,6 @@ git push
 ####  Por fim, criei o segundo repositório e coloque os arquivos do módulo de versionamento de código
 
 ![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/ce77ea8e-6e48-487c-8d6d-a03a1bb904ef)
-
-
+#### Para acessar cada repositório, deixarei seus respectivos links:
+#### RepoBianca -> https://git-codecommit.us-east-1.amazonaws.com/v1/repos/RepoBianca
+#### RepoBianca2 -> https://git-codecommit.us-east-1.amazonaws.com/v1/repos/RepoBianca2
