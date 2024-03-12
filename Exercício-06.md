@@ -11,6 +11,9 @@
 * 	Clique em Próximo: Revisão.
 * 	Digite pipelineperms4CF como o nome da função.
 * 	Clique em Criar função.
+
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/96e119a9-6028-4782-94e0-195c7e758c9f)
+
 ## 2. Criar Repositório
 *   Criar um Repositório AWS CodeCommit
 * 	No console da AWS, navegue até o CodeCommit e clique em Criar repositório.
@@ -28,6 +31,9 @@
 * 	Digite seu nome como o nome do autor.
 * 	Digite seu endereço de e-mail como o endereço de e-mail.
 * 	Clique em Confirmar alterações.
+
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/c3650146-2968-41b1-a7e6-7d68facf859b)
+
 ## 4. Crie um Tópico SNS
 * 	Navegue até o Serviço de Notificação Simples (SNS).
 * 	Na caixa Criar tópico na página principal do SNS, digite manualapprove como o nome do tópico.
@@ -38,9 +44,8 @@
 * 	Digite seu endereço de e-mail como o endpoint.
 * 	Clique em Criar assinatura.
 * 	Navegue até sua caixa de entrada, abra a mensagem AWS Notification - Subscription Confirmation e clique no link Confirmar assinatura.
-## 5. Crie um bucket
-*   Com o seguinte nome:s3bucketretain
-## 6. Crie a Pipeline
+
+## 5. Crie a Pipeline
 * 	Criar um Pipeline AWS CodePipeline
 * 	Navegue até o console do CodePipeline.
 * 	Clique em Criar pipeline.
@@ -66,6 +71,9 @@
     * Nome do arquivo: S3Retain.yaml
     * Nome da função: pipelineperms4CF
 * 	Clique em Próximo > Criar pipeline.
+
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/93f07bb7-1a52-4faf-a5ab-9dda7ca90db6)
+
 ## 7. Editei a pipeline
 * 	Clique no link AWS CloudFormation no painel Implantar.
 * 	Assim que o CloudFormation mostrar completo, retorne ao serviço CodePipeline.
@@ -82,12 +90,16 @@
 * 	Clique em Concluído > Salvar > Salvar.
 * 	Clique em Lançar alteração para reiniciar o pipeline.
 * 	Clique em Lançar.
+
 ## 8. Aprove manualmente
 * 	Navegue até sua caixa de entrada e abra a mensagem APROVAÇÃO NECESSÁRIA... para ver o que sua equipe receberia em um ambiente do mundo real.
 * 	Navegue de volta ao CodePipeline.
 * 	Clique em Revisão no painel Aprovação manual.
 * 	Digite Está bom - aprovado. nos comentários e clique em Aprovar.
 Publicar sua app em html no s3
+
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/0db0295b-e5bf-47a7-b5dd-682ff1304c5c)
+
 ## 9. Faça mais uma alteração
 * Clique em editar a pipe acima
 * Add um stage
@@ -97,9 +109,16 @@ Publicar sua app em html no s3
 	* Input Artifacts - SourceArtifacts
 	* Inclua o nome do bucket criado acima 
 	* Clique em Extract file before deploy
+
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/752ee415-0cb0-404c-a2f7-2dc4751cd64e)
+
 ## 10. Testando a Pipeline
 Agora que você configurou a pipeline, ela será acionada automaticamente sempre que houver uma alteração no repositório CodeCommit. Para testar:
 * 	Faça uma alteração no arquivo index.html em seu repositório CodeCommit (altere a cor da pagina ou adicione uma nova linha, ou altere os textos do html).
 * 	Aguarde alguns momentos para que a pipeline seja acionada automaticamente.
 * 	Após a conclusão da pipeline, verifique se o arquivo index.html foi atualizado no bucket S3.
-* 	Acesse o URL público do bucket S3 para confirmar se o "Hello World" está sendo exibido corretamente.
+* 	Acesse o URL público do bucket S3 para confirmar se a alteração está sendo exibida corretamente.
+
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/beeecf19-0fa0-4d77-abfa-c73ee074e65d)
+![image](https://github.com/BiancaMalta/Amazon-Web-Services/assets/92928037/310dccb5-3b54-4c98-8ceb-504e2084b0bf)
+
